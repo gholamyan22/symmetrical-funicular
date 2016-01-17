@@ -1,0 +1,38 @@
+#include "Vector.cpp"
+
+#include "particle.cpp"
+
+#include "rand.cxx"
+
+
+
+#include <iostream>
+
+
+int main(int argc, char **argv)
+{
+	
+particle A;
+	
+A.showpname();
+	
+A.showmass();
+	
+A.showpos();
+A.showener();
+A.showmomen();	
+Vector v(1,1,1);
+	
+particle B("electron",0.5,v);
+	
+B.showpos();
+	
+Clr C;
+	
+std::cout<<C.Rand();
+	
+return 0;
+
+}
+
+
